@@ -1,0 +1,20 @@
+﻿@model MVCFineArt.Models.Artist
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>@ViewBag.Message</h2>
+
+<div>
+<table>
+    <tr>
+        <td>Artist: @Model.FirstName @Model.LastName<br />
+            Medium: @Model.Medium</td>
+        <td>Example Image:<br />
+            <img src = @Model.ExampleImage alt = "Example Image" /></td>
+    </tr>
+</table>
+
+
+
+</div>

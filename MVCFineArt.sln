@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCFineArt", "MVCFineArt\MVCFineArt.csproj", "{354EDBF6-82E3-472D-8F48-0D030846CCA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{354EDBF6-82E3-472D-8F48-0D030846CCA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{354EDBF6-82E3-472D-8F48-0D030846CCA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{354EDBF6-82E3-472D-8F48-0D030846CCA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{354EDBF6-82E3-472D-8F48-0D030846CCA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

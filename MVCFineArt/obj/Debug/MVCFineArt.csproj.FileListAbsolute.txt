@@ -1,0 +1,7 @@
+c:\users\mark\documents\visual studio 2010\Projects\MVCFineArt\MVCFineArt\bin\MVCFineArt.dll
+c:\users\mark\documents\visual studio 2010\Projects\MVCFineArt\MVCFineArt\bin\MVCFineArt.pdb
+c:\users\mark\documents\visual studio 2010\Projects\MVCFineArt\MVCFineArt\bin\EntityFramework.dll
+c:\users\mark\documents\visual studio 2010\Projects\MVCFineArt\MVCFineArt\bin\EntityFramework.xml
+c:\users\mark\documents\visual studio 2010\Projects\MVCFineArt\MVCFineArt\obj\Debug\ResolveAssemblyReference.cache
+c:\users\mark\documents\visual studio 2010\Projects\MVCFineArt\MVCFineArt\obj\Debug\MVCFineArt.dll
+c:\users\mark\documents\visual studio 2010\Projects\MVCFineArt\MVCFineArt\obj\Debug\MVCFineArt.pdb
