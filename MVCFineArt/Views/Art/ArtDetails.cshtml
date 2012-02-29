@@ -1,0 +1,27 @@
+﻿@model MVCFineArt.Models.Art
+
+@{
+    ViewBag.Title = "ArtDetails";
+}
+
+<h2>ArtDetails</h2>
+
+<fieldset>
+    <legend>Art by @ViewBag.FirstName @ViewBag.LastName</legend>
+    <table>
+    <tr>
+    <td valign='top'>Title: @Html.DisplayFor(model => model.Title)<br />
+    Medium: @Html.DisplayFor(model => model.Medium)<br />
+    Date: @Html.DisplayFor(model => model.Date)<br />
+    Size: h:@Html.DisplayFor(model => model.Height) w: @Html.DisplayFor(model => model.Width) d: @Html.DisplayFor(model => model.Depth)<br />
+    Price: $@(Html.DisplayFor(model => model.Price))<br />
+    Availability: @Html.DisplayFor(model => model.Availability)</td>
+    <td><img src=@Html.DisplayFor(model => model.LargeImagePath)  alt=@Html.DisplayFor(model => model.Title) /></td>
+    </tr>
+    </table>
+</fieldset>
+<p>
+    @Html.ActionLink("Back to Artist's Work", "ArtByArtist", new { artistCode = Model.ArtistCode })<br />
+    <br />
+    @Html.ActionLink("Back to Artist List", "../Artists/Index")
+</p>

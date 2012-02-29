@@ -7,9 +7,11 @@ namespace MVCFineArt.Models
 {
     public class Artist
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Medium { get; set; }
-        public string ExampleImage { get; set; }
+        public virtual int ID { get; set; }
+        public virtual string ArtistCode { get; set; }
+        public virtual string FirstName { get; set; }
+        public virtual string LastName { get; set; }
+        public virtual string Medium { get; set; }
+        public virtual string SampleImage { get; set; }
     }
 }

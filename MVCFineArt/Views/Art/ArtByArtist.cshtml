@@ -1,0 +1,39 @@
+﻿@model IEnumerable<MVCFineArt.Models.Art>
+
+@{
+    ViewBag.Title = "Art By Artist";
+}
+
+<h2>Art by @ViewBag.FirstName @ViewBag.LastName</h2>
+<table>
+    <tr>
+        <th>
+            Art Details
+        </th>
+        <th>
+            Image
+        </th>
+        <th>
+            More..
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td valign="top">Title: @Html.DisplayFor(modelItem => item.Title)<br />
+            Medium: @Html.DisplayFor(modelItem => item.Medium)<br />
+            Date: @Html.DisplayFor(modelItem => item.Date)<br />
+            Size: h:@Html.DisplayFor(modelItem => item.Height) w: @Html.DisplayFor(modelItem => item.Width) d: @Html.DisplayFor(modelItem => item.Depth)<br />
+            Price: $@(Html.DisplayFor(modelItem => item.Price))<br />
+            Availability: @Html.DisplayFor(modelItem => item.Availability)</td>
+        <td><img src=@Html.DisplayFor(modelItem => item.SmallImagePath) alt=@Html.DisplayFor(modelItem => item.Title) />
+        </td>
+        <td nowrap>
+            @Html.ActionLink("Larger Image", "ArtDetails", new { id=item.ID }) 
+        </td>
+    </tr>
+}
+</table>
+<br />
+<br />
+@Html.ActionLink("Back to Artist List", "../Artists/Index")

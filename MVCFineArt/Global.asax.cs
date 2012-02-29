@@ -21,6 +21,34 @@ namespace MVCFineArt
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            // Added for 'artists/artistCode' routing 
+            routes.MapRoute(
+                "Artists",
+                "Artists/{artistCode}",
+                new { controller = "Artists", action = "Index", artistCode = UrlParameter.Optional }
+            );
+
+            // Added for 'art/artByArtist' routing 
+            routes.MapRoute(
+                "Art/ArtByArtist",
+                "Art/ArtByArtist/{artistCode}",
+                new { controller = "Art", action = "ArtByArtist", artistCode = UrlParameter.Optional }
+            );
+
+            // Added for 'art/' routing 
+            routes.MapRoute(
+                "Art/ArtDetails",
+                "Art/ArtDetails/{id}",
+                new { controller = "Art", action = "ArtDetails", id = UrlParameter.Optional }
+            );
+
+            // Added for 'art/' routing 
+            routes.MapRoute(
+                "Art",
+                "Art/{action}/{id}",
+                new { controller = "Artists", action = "Index", id = UrlParameter.Optional }
+            );
+
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters

@@ -1,12 +1,10 @@
 ﻿@model IEnumerable<MVCFineArt.Models.Artist>
-           
+
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Index";
 }
 
-<h2>@ViewBag.Message</h2>
-
-<div>
+<h2>Artist List</h2>
 <table>
     <tr>
         <th>
@@ -20,19 +18,16 @@
         </th>
     </tr>
 
-@foreach (var item in Model)
-{
+@foreach (var item in Model) 
+{    
     <tr>
         <td>Artist: @Html.DisplayFor(modelItem => item.FirstName) @Html.DisplayFor(modelItem => item.LastName)<br />
             Medium: @Html.DisplayFor(modelItem => item.Medium)</td>
         <td><img src=@Html.DisplayFor(modelItem => item.SampleImage) alt='Sample Image' /></td>
         <td>
-            @Html.ActionLink("Artist Details", "../Artists/ArtistDetails", new { id=item.ID })<br />
+            @Html.ActionLink("Artist Details", "../Artists/ArtistDetails", new { id = item.ID })<br />
             @Html.ActionLink("Art by Artist", "../Art/ArtByArtist", new { artistCode = item.ArtistCode })</td>
     </tr>
 }
+
 </table>
-
-
-
-</div>
