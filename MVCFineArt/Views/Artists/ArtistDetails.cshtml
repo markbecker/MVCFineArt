@@ -5,22 +5,27 @@
 }
 
 <h2>Artist Details</h2>
+<script type="text/javascript" src=@Html.DisplayFor(model => model.Biography) ></script>
 
 <h3>Details about @Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName)</h3>
 <fieldset>
     <legend>Artist</legend>
-    <table><tr><td>
-    <div class="display-label">ArtistCode: @Html.DisplayFor(model => model.ArtistCode)</div>
-    <div class="display-label">FirstName: @Html.DisplayFor(model => model.FirstName)</div>
-    <div class="display-label">LastName: @Html.DisplayFor(model => model.LastName)</div>
-    <div class="display-label">Medium: @Html.DisplayFor(model => model.Medium)</div>
+    <table>
+    <tr>
+    <td nowrap valign=top width=200>ArtistCode: @Html.DisplayFor(model => model.ArtistCode)<br />
+    FirstName: @Html.DisplayFor(model => model.FirstName)<br />
+    LastName: @Html.DisplayFor(model => model.LastName)<br />
+    Medium: @Html.DisplayFor(model => model.Medium)
     </td>
-    <td>    
-    <div class="display-label"><img src=@Html.DisplayFor(model => model.SampleImage) alt='Image' /></div>
-    </td></tr></table>
+    <td nowrap valign=top width=200><img src=@Html.DisplayFor(model => model.SampleImage) alt='Image' />
+    </td>
+    <td><script type="text/javascript">document.write(bio);</script>
+    </td>    
+    </tr>
+    </table>
 </fieldset>
 @using (Html.BeginForm()) {
     <p>
         @Html.ActionLink("Back to Artist List", "Index")
     </p>
-}
+} 

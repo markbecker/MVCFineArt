@@ -17,7 +17,8 @@ namespace MVCFineArt.Models
                 FirstName = "Mark",
                 LastName = "Becker",
                 Medium = "Photograhy",
-                SampleImage = "../../Content/Images/mbec1_22_v1_small.jpg"
+                SampleImage = "../../Content/Images/mbec1_22_v1_small.jpg",
+                Biography = "../../Content/Biographies/bio_mbec1.js"
             });
 
             _artists.Add(new Artist
@@ -27,7 +28,8 @@ namespace MVCFineArt.Models
                 FirstName = "Derek",
                 LastName = "Lynch",
                 Medium = "Painting",
-                SampleImage = "../../Content/Images/dlyn1_2_v2_small.jpg"
+                SampleImage = "../../Content/Images/dlyn1_2_v2_small.jpg",
+                Biography = "../../Content/Biographies/bio_dlyn1.js"
             });
 
             _artists.Add(new Artist
@@ -37,7 +39,8 @@ namespace MVCFineArt.Models
                 FirstName = "Marc Ellen",
                 LastName = "Hamel",
                 Medium = "Painting",
-                SampleImage = "../../Content/Images/mham1_23_v1_small.jpg"
+                SampleImage = "../../Content/Images/mham1_23_v1_small.jpg",
+                Biography = "../../Content/Biographies/bio_mham1.js"
             });
         }
 

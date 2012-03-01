@@ -13,5 +13,6 @@ namespace MVCFineArt.Models
         public virtual string LastName { get; set; }
         public virtual string Medium { get; set; }
         public virtual string SampleImage { get; set; }
+        public virtual string Biography { get; set; }
     }
 }
